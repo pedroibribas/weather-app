@@ -1,5 +1,3 @@
-**Aviso:** Este README está **em construção.**
-
 <!-- Title & Description -->
 <h1 align="center">ClimaTempo APP</h1>
 <p align="center">Aplicativo para acessar informações meteorológicas.</p>
@@ -7,12 +5,12 @@
 <!-- Badges -->
 <p align="center">
   
-  <img alt="JavaScript related" src="https://img.shields.io/badge/Made%20with-JavaScript-blue.svg">
-  
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/pedroibribas/weather-app?color=blue">
   
+  <img alt="License" src="https://img.shields.io/github/license/pedroibribas/weather-app?style=flat-square&color=blue">
+ 
   <a href="https://floating-plateau-59695.herokuapp.com/">
-    <img alt="Github language count" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg">
+    <img alt="Website" src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Ffloating-plateau-59695.herokuapp.com%2F">
   </a>
   
 </p>
@@ -23,9 +21,9 @@
   <a href="#aviso">Aviso</a> &#xa0; | &#xa0;
   <a href="#screenshots">Screenshots</a> &#xa0; | &#xa0;
   <a href="#pré-requisitos">Pré-requisitos</a> &#xa0; | &#xa0;
-  <a href="#rodando-o-servidor">Rodando o Servidor</a> &#xa0; | &#xa0;
-  <a href="#tecnologias-utilizadas">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#contribuidores">Contribuidores</a> &#xa0; | &#xa0;
+  <a href="#rodando-o-servidor">Rodando o servidor</a> &#xa0; | &#xa0;
+  <a href="#tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#contribuição">Contribuição</a> &#xa0; | &#xa0;
   <a href="#autor">Autor</a> &#xa0; | &#xa0;
   <a href="#licença">Licença</a>
 </p>
@@ -57,45 +55,56 @@ Em suma, o servidor recebe o nome da cidade buscado pelo usuário no formulário
 - Mensagem de erro caso o usuário erre o nome da cidade
 <img width="325px" src="./assets/github/screenshots/ss-error.jpg">
 
-<!--
-## :rocket: Technologies
+## Pré-requisitos
 
-The following tools were used in this project:
+Antes de começar, você vai precisar de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e um editor para o código, como [VSCode](https://code.visualstudio.com/).
 
-- [NodeJS](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [EJS](https://ejs.co/)
-- [OpenWeather's API](https://openweathermap.org/)
-
-## :white_check_mark: Requirements
-
-Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
-
-## :checkered_flag: Starting
+## Rodando o servidor
 
 ```bash
-# Clone this project
+# Clone o repositório
 $ git clone https://github.com/pedroibribas/weather-app
 
-# Access project directory
+# Acesse a pasta do projeto
 $ cd weather-app
 
-# Install dependencies
-$ npm install .
+# Instale todas as dependências
+$ npm install
 
-# Run the project
-$ node app.js
+# Execute a aplicação
+$ nodemon app.js
 
-# The server will initialize in the <http://localhost:3000>
+# O servidor será inicializado em <http://localhost:3000>
 ```
 
-## :memo: License
+## Tecnologias
 
-This project is under license from [MIT](LICENSE.md).
+As seguintes tecnologias foram usadas nos projeto:
 
-Made with :heart: by <a href="https://github.com/pedroibribas" target="_blank">Pedro Ribas</a>
+- [NodeJS](https://nodejs.org/en/)
+- [Nodemon](https://nodemon.io/)
+- [Express](https://expressjs.com/)
+- [Https](https://nodejs.org/api/https.html)
+- [EJS](https://ejs.co/)
+- [OpenWeather API](https://openweathermap.org/)
+- [Heroku](https://www.heroku.com/platform)
 
-&#xa0;
--->
+## Contribuição
 
-<a href="#top">Voltar ao topo</a>
+Ainda não temos contribuidores. Que tal ser o primeiro? :smirk:
+
+## Autor
+**Pedro Ribas**  
+<a href="https://linkedin.com/in/pedroibribas/" target="_blank">
+  <img align="center" src="https://img.shields.io/badge/-pedroibribas-blue?style=flat&logo=linkedin" alt="linkedin"/>
+</a>
+<a href="https://instagram.com/pedroivo.ribas/" target="_blank">
+  <img align="center" src="https://img.shields.io/badge/-pedroibribas-%23E4405F?style=flat&logo=instagram&logoColor=white" alt="instagram"/>
+</a>
+
+
+## Licença
+
+Este projeto está sob licença [MIT](LICENSE).
+
+Feito com :heart: por <a href="https://github.com/pedroibribas" target="_blank">Pedro Ribas</a>.
