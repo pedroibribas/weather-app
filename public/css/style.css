@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Pallette */
+  --bg-clr: #DDDDDD;
+  --bg-clr-alt: #E8F0F2;
+  --txt-clr: #222831;
+  --accent-clr: #F05454;
+  /* Fonts */
+  --main-font: 'Open Sans', sans-serif;
+  --err-font: 'Calibri', sans-serif;
+}
+
+body {
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
+  font-family: var(--main-font);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 357px;
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* WARNING: Following CSS rules are organized as html markup order */
+
+/* Details */
+
+#main-details h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#main-details .row {
+  justify-content: center;
+}
+
+#main-details h3 {
+  font-size: 6rem;
+}
+
+#main-details p {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+#main-details small {
+  display: block;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+#sec-details .row {
+  justify-content: space-evenly;
+}
+
+#sec-details .details-box {
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-clr-alt);
+  text-align: left;
+}
+
+#sec-details .details-box .row {
+  gap: 0.5rem;
+}
+
+#sec-details h4, #sec-details p {
+  font-size: 0.9rem;
+}
+
+#sec-details .divider {
+  width: 1px;
+  height: 5rem;
+  background-color: var(--txt-clr);
+}
+
+/* Error alert */
+.error {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background: var(--accent-clr);
+  color: #fff;
+  font-family: var(--err-font);
+  text-align: left;
+  letter-spacing: 0.05rem;
+}
+.error strong {
+  font-size: 1.1rem;
+}
+
+/* Form */
+
+#form.col {
+  display: grid;
+  gap: 0.25rem;
+}
+
+#form .lf-align {
+  text-align: left;
+}
+
+input[type="text"], input[type="text"]::placeholder, .btn {
+  font-family: var(--main-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--accent-clr);
+  border-right-style: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  
+}
+input[type="text"]:focus {
+  outline: 2px solid var(--accent-clr);
+}
+
+.btn {
+  padding: 0.75rem;
+  background-color: var(--accent-clr);
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  color: var(--txt-clr);
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  font-size: 0.9rem;
+  text-align: center;
+}

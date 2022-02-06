@@ -1,0 +1,70 @@
+<%- include("header") -%>
+
+  <div class="container">
+    <h1><i class="fas fa-cloud-moon fa-2x"></i> ClimaTempo APP</h1>
+
+    <!-- Details -->
+    <% if (data.length !==0) { %>
+      <div id="main-details">
+        <h2>
+          <i class="fas fa-map-marker-alt"></i>
+          <%= data.name %>, <%= data.country %>
+        </h2>
+        <div class="row">
+          <h3>
+            <%= data.temp %>º
+          </h3>
+          <img src="<%= data.imageURL %>" alt="<%= data.description %>">
+        </div>
+        <p>
+          <%= data.description %>
+        </p>
+        <small>
+          <%= data.today %>
+        </small>
+      </div>
+      <div id="sec-details">
+        <div class="row details-box">
+          <div class="row">
+            <i class="fas fa-wind fa-2x"></i>
+            <div>
+              <h4>Vento</h4>
+              <p>
+                <%= data.windSpeed %> km/h
+              </p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <i class="fas fa-tint fa-2x"></i>
+            <div>
+              <h4> Humidade</h4>
+              <p>
+                <%= data.humidity %> UR
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+
+        <!-- Error alert -->
+        <% if (status===404) { %>
+          <div class="error"><strong>Não encontrado!</strong> <br>
+            Confira se o nome da cidade está correto e tente
+            de novo.
+          </div>
+          <% } %>
+
+            <!-- Form -->
+            <form id="form" class="col" action="/" method="post">
+              <label class="lf-align" for="searchInput">Insira o nome de sua cidade e pesquise:</label>
+              <div class="row">
+                <input type="text" id="searchInput" name="cityName" autocomplete="off" placeholder="São Paulo"
+                  tabindex="1" required>
+                <button class="btn" type="submit">Pesquisar</button>
+              </div>
+            </form>
+  </div>
+
+  <%- include("footer") -%>
