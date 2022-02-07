@@ -74,6 +74,11 @@ $ cd weather-app
 # Instale todas as dependências
 $ npm install
 
+# Gera uma API KEY no site OpenWheter <https://openweathermap.org/appid>
+
+# Configure a API KEY gerada como variável de ambiente
+$ export API_KEY={API_KEY_EXEMPLO}
+
 # Execute a aplicação
 $ npm start
 
