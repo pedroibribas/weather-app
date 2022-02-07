@@ -62,8 +62,11 @@ Antes de começar, você vai precisar de [Git](https://git-scm.com), [Node.js](h
 ## Rodando o servidor
 
 ```bash
-# Clone o repositório
+# Clone o repositório com HTTPS
 $ git clone https://github.com/pedroibribas/weather-app
+
+# Clone o repositório com SSH
+$ git clone git@github.com:pedroibribas/weather-app.git
 
 # Acesse a pasta do projeto
 $ cd weather-app
@@ -72,7 +75,7 @@ $ cd weather-app
 $ npm install
 
 # Execute a aplicação
-$ nodemon app.js
+$ npm start
 
 # O servidor será inicializado em <http://localhost:3000>
 ```
