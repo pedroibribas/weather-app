@@ -99,7 +99,17 @@ As seguintes tecnologias foram usadas nos projeto:
 
 ## Contribuição
 
-Ainda não temos contribuidores. Que tal ser o primeiro? :smirk:
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/viniciussbpc" target="_blank">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/43794537?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Vinícius Santos</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Autor
 **Pedro Ribas**  
